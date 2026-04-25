@@ -1,13 +1,38 @@
 {
-	"folders": [
-		{
-			"name": "Root - WordLink",
-			"path": "."
-		},
-		{
-			"name": "Vue Frontend",
-			"path": "frontend"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "name": "Root - WordLink",
+      "path": ".",
+    },
+    {
+      "name": "Vue Frontend",
+      "path": "frontend",
+    },
+  ],
+  "extensions": {
+    "recommendations": [
+      "Vue.volar",
+      "dbaeumer.vscode-eslint",
+      "EditorConfig.EditorConfig",
+      "oxc.oxc-vscode",
+    ],
+  },
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+    },
+    "editor.formatOnSave": true,
+    "[json]": {
+      "editor.defaultFormatter": "oxc.oxc-vscode",
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "oxc.oxc-vscode",
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "oxc.oxc-vscode",
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "oxc.oxc-vscode",
+    },
+  },
 }
