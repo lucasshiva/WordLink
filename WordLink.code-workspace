@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Root - WordLink",
+			"path": "."
+		},
+		{
+			"name": "Vue Frontend",
+			"path": "frontend"
+		}
+	],
+	"settings": {}
+}
