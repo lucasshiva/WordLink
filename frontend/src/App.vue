@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+</script>
 <template>
   <div class="flex h-screen flex-col">
     <UApp>
@@ -9,7 +14,7 @@
       </main>
 
       <!-- Footer -->
-      <div></div>
+      <Footer v-if="route.path === '/'" />
     </UApp>
   </div>
 </template>
