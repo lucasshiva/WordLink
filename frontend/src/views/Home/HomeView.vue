@@ -1,6 +1,16 @@
 <script setup lang="ts">
+import { h } from "vue";
+
+import ExternalLink from "@/components/ExternalLink.vue";
+
 import HomeCard from "./HomeCard.vue";
+
+const WordleLink = () =>
+  h(ExternalLink, { text: "Wordle", url: "https://www.nytimes.com/games/wordle/index.html" });
+
+const TermoLink = () => h(ExternalLink, { text: "Termo", url: "https://term.ooo/" });
 </script>
+
 <template>
   <div class="flex h-full flex-col items-center justify-center gap-12">
     <!-- Text -->
@@ -10,7 +20,7 @@ import HomeCard from "./HomeCard.vue";
       </p>
       <div class="text-center text-[10px] sm:text-[11px] md:text-[12px] lg:text-sm">
         <p>A real-time, competitive word-guessing game with multiplayer features.</p>
-        <p>Inspired by Wordle and Termo.</p>
+        <p>Inspired by <WordleLink /> and <TermoLink />.</p>
       </div>
     </div>
 
