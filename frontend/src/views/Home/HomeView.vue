@@ -31,21 +31,24 @@ const TermoLink = () => h(ExternalLink, { text: "Termo", url: "https://term.ooo/
         description="Classic Wordle experience. Play unlimited random words at your own pace."
         button-text="Play"
         icon="i-lucide-user"
-        color="blue"
+        accentColor="blue"
+        disabled
       />
       <HomeCard
         title="Join Room"
         description="Play with friends in real time. Compete to see who can guess the secret word first."
         button-text="Join"
         icon="i-lucide-users"
-        color="green"
+        accentColor="green"
+        disabled
       />
       <HomeCard
         title="Create Room"
         description="Create a room and invite friends. Start a multiplayer match and see who solves it first."
         button-text="Create"
         icon="i-lucide-door-open"
-        color="yellow"
+        accentColor="yellow"
+        disabled
       />
     </div>
   </div>
