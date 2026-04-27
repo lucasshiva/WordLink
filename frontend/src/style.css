@@ -4,3 +4,8 @@
 @theme {
   --font-sans: "Outfit", sans-serif;
 }
+
+/* Override NuxtUI default colors */
+:root {
+  --ui-bg: #0b0b10;
+}

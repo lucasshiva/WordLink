@@ -1,27 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRoute } from "vue-router";
+
+import HomeFooter from "./views/Home/HomeFooter.vue";
+const route = useRoute();
+</script>
 
 <template>
-  <div class="flex h-screen items-center justify-center">
+  <div class="flex h-screen flex-col">
     <UApp>
-      <UCard variant="subtle" class="max-w-[20rem]">
-        <div class="flex flex-col items-start gap-6">
-          <div>
-            <h1>You did it!</h1>
-            <p class="text-muted mt-1 text-[12px]">
-              Visit
-              <a
-                href="https://vuejs.org/"
-                target="_blank"
-                rel="noopener"
-                class="text-primary underline"
-                >vuejs.org</a
-              >
-              to read the documentation. This is supposed to be some big text!
-            </p>
-          </div>
-          <UButton>Click me</UButton>
-        </div>
-      </UCard>
+      <!-- Header -->
+      <!-- <div></div> -->
+
+      <main class="flex-1">
+        <RouterView />
+      </main>
+
+      <!-- Footer -->
+      <HomeFooter v-if="route.path === '/'" />
     </UApp>
   </div>
 </template>
