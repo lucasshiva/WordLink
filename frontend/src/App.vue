@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+
+import HomeFooter from "./views/Home/HomeFooter.vue";
 const route = useRoute();
 </script>
 
@@ -14,7 +16,7 @@ const route = useRoute();
       </main>
 
       <!-- Footer -->
-      <Footer v-if="route.path === '/'" />
+      <HomeFooter v-if="route.path === '/'" />
     </UApp>
   </div>
 </template>
